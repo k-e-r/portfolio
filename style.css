@@ -1,0 +1,62 @@
+body {
+  background-color: #fbf9f7;
+}
+
+.hero__title-box {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lname {
+  stroke-dasharray: 6000;
+  stroke-dashoffset: 6000;
+  animation-name: lname-anime;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  stroke: #d6909d;
+  fill: #fbf9f7;
+}
+
+@keyframes lname-anime {
+  0% {
+    stroke-dashoffset: 6000;
+    fill: #fbf9f7;
+  }
+
+  30% {
+    stroke-dashoffset: 0;
+    fill: #fbf9f7;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    fill: #d6909d;
+  }
+
+  70% {
+    stroke-dashoffset: 0;
+    fill: #fbf9f7;
+  }
+
+  100% {
+    stroke-dashoffset: 6000;
+    fill: #fbf9f7;
+  }
+}
+
+.hero__text {
+  margin-top: 5rem;
+  font-family: cursive;
+  color: #919191;
+}
+
+.email {
+  margin-top: 1.5rem;
+  /* font-family: cursive; */
+  color: #919191;
+}
