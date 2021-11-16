@@ -18,12 +18,13 @@ header {
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
 
 .hero__title-img {
+  margin-top: 20vh;
   width: 75vw;
   max-width: 35rem;
 }
@@ -78,4 +79,17 @@ header {
 .email {
   margin-top: 1.5rem;
   color: #919191;
+}
+
+.icon {
+  margin-top: 1.5rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  cursor: pointer;
+  color: #919191;
+  text-decoration: none;
 }
