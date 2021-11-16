@@ -11,9 +11,13 @@ body {
   flex-direction: column;
 }
 
+.hero__title-img {
+  width: 75vw;
+}
+
 .lname {
-  stroke-dasharray: 6000;
-  stroke-dashoffset: 6000;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
   animation-name: lname-anime;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -24,7 +28,7 @@ body {
 
 @keyframes lname-anime {
   0% {
-    stroke-dashoffset: 6000;
+    stroke-dashoffset: 5000;
     fill: #fbf9f7;
   }
 
@@ -44,7 +48,7 @@ body {
   }
 
   100% {
-    stroke-dashoffset: 6000;
+    stroke-dashoffset: 5000;
     fill: #fbf9f7;
   }
 }
