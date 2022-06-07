@@ -1,17 +1,14 @@
 .heroContainer {
   position: relative;
+  display: flex;
 }
 
 .heroImage {
-  /* height: 38vh;
-  background-image: url(../../assets/images/hero-img.jpg);
-  background-size: contain;
-  background-repeat: no-repeat; */
-  width: 100%;
+  margin: auto;
+  /* max-width: 90rem; */
   max-height: 80vh;
   filter: brightness(0.5) opacity(0.7);
   object-fit: cover;
-  /* transition-duration: 0.3s; */
   object-position: center 30%;
 }
 
@@ -28,7 +25,6 @@
   width: 1.7rem;
   height: 5rem;
   margin: auto;
-  /* top: 0; */
   left: 0;
   right: 0;
   bottom: 1rem;

@@ -22,6 +22,7 @@ import {
 } from 'react-icons/si';
 import { BiMicrochip } from 'react-icons/bi';
 import { FiEdit, FiBookmark } from 'react-icons/fi';
+import { GiSolderingIron } from 'react-icons/gi';
 
 import classes from './SkillBox.module.css';
 
@@ -105,6 +106,10 @@ const SkillBox = () => {
         <div className={classes.skillItem}>
           <BiMicrochip />
           <p>PIC and so on</p>
+        </div>
+        <div className={classes.skillItem}>
+          <GiSolderingIron />
+          <p>Hardware</p>
         </div>
         <div className={classes.skillItem}>
           <SiLinux />
