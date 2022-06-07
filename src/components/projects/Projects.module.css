@@ -1,0 +1,13 @@
+.projectContainer {
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #fbfbfb;
+}
+
+.projectBox {
+  width: 95%;
+  height: 33rem;
+  margin: 1rem auto;
+  border: 0.5px solid #ccc;
+  overflow-y: scroll;
+}

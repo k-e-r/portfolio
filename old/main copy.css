@@ -53,12 +53,14 @@ header {
 
   50% {
     stroke-dashoffset: 0;
-    fill: #d6909d;
+    fill: #d6909d9a;
+    stroke: #d6909d9a;
   }
 
   70% {
     stroke-dashoffset: 0;
     fill: #fbf9f7;
+    stroke: #d6909d;
   }
 
   100% {
