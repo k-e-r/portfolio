@@ -45,7 +45,7 @@ const ProjectCard = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            DEMO <CgWebsite />
+            WEBSITE <CgWebsite />
           </a>
         </div>
       </div>
@@ -93,7 +93,7 @@ const ProjectCard = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            DEMO <CgWebsite />
+            WEBSITE <CgWebsite />
           </a>
         </div>
       </div>
@@ -134,7 +134,7 @@ const ProjectCard = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            DEMO <CgWebsite />
+            WEBSITE <CgWebsite />
           </a>
         </div>
       </div>
@@ -215,7 +215,47 @@ const ProjectCard = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            DEMO <CgWebsite />
+            WEBSITE <CgWebsite />
+          </a>
+        </div>
+      </div>
+
+      <hr className={classes.hrDesign} />
+
+      <div className={classes.projectCard}>
+        <div className={classes.projectTitle}>Portfolio</div>
+        <div className={classes.projectSkillBox}>
+          <div className={classes.projectSkill}>React</div>
+          <div className={classes.projectSkill}>CSS</div>
+        </div>
+        <div className={classes.projectMovieBox}>
+          <video
+            className={classes.projectMovie}
+            src='https://www.kestudies.com/assets/movies/Portfolio.mp4'
+            type='video/mp4'
+            loop={true}
+            playsInline={true}
+            autoPlay={true}
+            muted={true}
+          ></video>
+        </div>
+        <div className={classes.projectExplanation}>
+          <p>This is a website of my portfolio.</p>
+        </div>
+        <div className={classes.projectURL}>
+          <a
+            href='https://github.com/k-e-r/portfolio'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            CODE <AiOutlineGithub />
+          </a>
+          <a
+            href='https://www.kestudies.com/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            WEBSITE <CgWebsite />
           </a>
         </div>
       </div>

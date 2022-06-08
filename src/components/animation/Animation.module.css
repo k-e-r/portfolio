@@ -12,7 +12,9 @@ body {
 
 .nameAnimationHide {
   position: absolute;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
   background-color: #fff;
   -webkit-animation: name_hide 1.5s 3s forwards;
