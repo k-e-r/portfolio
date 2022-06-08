@@ -42,8 +42,8 @@
 }
 
 .heroImageBox img.anime1 {
-  -webkit-animation: image_move1 2s ease-in-out forwards;
-  animation: image_move1 2s ease-in-out forwards;
+  -webkit-animation: image_move1 1s ease-in-out forwards;
+  animation: image_move1 1s ease-in-out forwards;
 }
 
 @keyframes image_move1 {
@@ -56,8 +56,8 @@
 }
 
 .heroImageBox img.anime2 {
-  -webkit-animation: image_move2 2s ease-in-out forwards;
-  animation: image_move2 2s ease-in-out forwards;
+  -webkit-animation: image_move2 1s ease-in-out forwards;
+  animation: image_move2 1s ease-in-out forwards;
 }
 
 @keyframes image_move2 {
