@@ -7,7 +7,6 @@ let imageIdx = 0,
   animeFlg = false;
 const Hero = () => {
   const [heroImages, setHeroImages] = useState([]);
-  console.log('heroImages', heroImages);
 
   useEffect(() => {
     // init
@@ -34,7 +33,7 @@ const Hero = () => {
         imageIdx = 0;
         animeFlg = !animeFlg;
       }
-    }, 7000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);

@@ -4,7 +4,7 @@ import classes from './Projects.module.css';
 function Project() {
   return (
     <div className={classes.projectContainer}>
-      <div className={classes.projectTitle}>PROJECT</div>
+      <div className={classes.projectTitle}>PROJECTS</div>
       <div className={classes.projectBox}>
         <ProjectCard />
       </div>

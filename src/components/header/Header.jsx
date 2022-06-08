@@ -7,7 +7,12 @@ const Header = () => {
         KAORI ERA
       </a>
 
-      <a href='/' className={classes.headerResume}>
+      <a
+        href='../../assets/KaoriEraResume.pdf'
+        target='_blank'
+        rel='noopener noreferrer'
+        className={classes.headerResume}
+      >
         RESUME
       </a>
     </header>

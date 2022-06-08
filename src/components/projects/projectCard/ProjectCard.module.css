@@ -1,19 +1,21 @@
 .projectCard {
-  /* width: 100%;
-  height: 100%; */
   padding: 1rem;
 }
 
 .projectTitle {
   font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .projectSkillBox {
   display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .projectSkill {
-  margin: 0.8rem 0.3rem;
+  margin: 0 0.3rem 0.8rem 0.3rem;
   padding: 0.1rem 0.5rem;
   font-weight: 200;
   font-size: 0.9rem;
@@ -63,4 +65,10 @@
 
 .projectURL a svg {
   margin-left: 0.3rem;
+}
+
+.hrDesign {
+  width: 95%;
+  margin-top: 2rem;
+  border-top: 1px dashed #ccc;
 }

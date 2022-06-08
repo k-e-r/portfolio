@@ -1,0 +1,38 @@
+.contactContainer {
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactBox {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactBox a {
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin: 0.2rem;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.contactBox a:hover {
+  transform: translateY(-2px);
+}
+
+.contactIconBox {
+  margin-top: 0.5rem;
+}
+
+.contactIconBox svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}

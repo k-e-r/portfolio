@@ -29,7 +29,7 @@ import classes from './SkillBox.module.css';
 const SkillBox = () => {
   return (
     <div className={classes.skillContainer}>
-      <div className={classes.skillTitle}>SKILL</div>
+      <div className={classes.skillTitle}>SKILLS</div>
       <div className={classes.skillBox}>
         <div className={classes.skillItem}>
           <AiOutlineHtml5 />
