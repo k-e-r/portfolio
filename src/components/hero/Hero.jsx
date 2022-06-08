@@ -1,30 +1,72 @@
+import { useState, useEffect } from 'react';
 import classes from './Hero.module.css';
 
-import HeroImage from '../../assets/images/hero-img.jpg';
+import images from '../../lib/images.json';
 
+let imageIdx = 0,
+  animeFlg = false;
 const Hero = () => {
+  const [heroImages, setHeroImages] = useState([]);
+  console.log('heroImages', heroImages);
+
+  useEffect(() => {
+    // init
+    setHeroImages([
+      '../../assets/images/hero/' + images[imageIdx].name,
+      '../../assets/images/hero/' + images[imageIdx + 1].name,
+    ]);
+    imageIdx++;
+    animeFlg = !animeFlg;
+
+    const interval = setInterval(() => {
+      if (images.length > imageIdx + 1) {
+        setHeroImages([
+          '../../assets/images/hero/' + images[imageIdx].name,
+          '../../assets/images/hero/' + images[imageIdx + 1].name,
+        ]);
+        imageIdx++;
+        animeFlg = !animeFlg;
+      } else {
+        setHeroImages([
+          '../../assets/images/hero/' + images[imageIdx].name,
+          '../../assets/images/hero/' + images[0].name,
+        ]);
+        imageIdx = 0;
+        animeFlg = !animeFlg;
+      }
+    }, 7000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={classes.heroContainer}>
-      <img className={classes.heroImage} src={HeroImage} alt='hero image'></img>
-      <p className={classes.heroMessage}>
-        A Front-end Developer based in Vancouver
-      </p>
-      <div className={classes.heroGuide}>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='0.288889in'
-          height='0.8in'
-          viewBox='0 0 26 72'
-        >
-          <path
-            className={classes.guideArrow}
-            strokeWidth='1'
-            d='M 13.00,0.00
-              C 13.00,0.00 13.00,70.00 13.00,70.00
-                13.00,70.00 3.00,40.00 3.00,40.00
-                3.00,40.00 23.00,40.00 23.00,40.00'
-          />
-        </svg>
+      <div className={classes.heroImageBox}>
+        {[...Array(4)].map((x, idx) => (
+          <div key={idx} className={classes.heroImage}>
+            {heroImages.map((image, key) => (
+              <img
+                key={key}
+                className={
+                  animeFlg === true ? `${classes.anime1}` : `${classes.anime2}`
+                }
+                src={`${image}${idx + 1}.jpg`}
+                alt='introduction of myself'
+              />
+            ))}
+          </div>
+        ))}
+      </div>
+      <div className={classes.heroMessage}>
+        <h2>A Front-end Developer based in Vancouver</h2>
+        <p>
+          A front-end developer who has a hardware background of 9+ years and
+          loves building creative websites and applications that make life
+          easier. A hard worker who has the experience to make products as both
+          an engineer and a PL. I have developed several websites and
+          applications using HTML, CSS, Sass, JavaScript, React, and so on. I
+          also love eating tasty food, going for walks, and doing handicrafts :)
+        </p>
       </div>
     </div>
   );
