@@ -1,6 +1,7 @@
 .heroContainer {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
   background: linear-gradient(
@@ -72,7 +73,7 @@
 .heroMessage {
   width: calc(80vw - 112.5px * 4);
   font-size: 1rem;
-  padding: 2rem;
+  /* padding: 2rem; */
   line-height: 1.9rem;
   overflow-wrap: break-word;
 }
@@ -113,5 +114,20 @@
 
   100% {
     stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroContainer {
+    flex-direction: column;
+  }
+
+  .heroImageBox {
+    display: none;
+  }
+
+  .heroMessage {
+    width: auto;
+    padding: 2rem;
   }
 }
