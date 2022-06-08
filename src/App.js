@@ -8,7 +8,7 @@ import SkillBox from './components/skillBox/SkillBox';
 function App() {
   return (
     <>
-      {/* <Animation /> */}
+      <Animation />
       <Header />
       <Hero />
       <Projects />
